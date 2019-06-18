@@ -6,7 +6,7 @@ int A[100000];
 
 
 int main(){
-  int i, lb, ub;
+  int lb, ub;
   scanf("%d%d", &n, &k);
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
