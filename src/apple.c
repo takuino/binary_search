@@ -13,21 +13,16 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-    int max;
-    max= A[0];
-    for(i = 0; i < n; i++){
-        if(A[i] > max) max = A[i];
-    }
     lb = 0;
-    ub = max
+    ub = 1000000000;
     while(ub - lb > 1){
-        int m = (lb + ub)/2;
-        int sum = 0
+        int x = (lb + ub)/2;
+        int sum = 0;
         for(i = 0; i < n; i++){
-            sum += (A[i] + m - 1) / m;
+            sum += (A[i] + x - 1) / x;
         }
-        if(sum <= k) ub = m;
-        else lb = m;
+        if(sum <= k) ub = x;
+        else lb = x;
         }
 printf("%d\n", ub);
   return 0;
