@@ -9,12 +9,11 @@ int p(int x){
     int need = 1;
     int sum = 0;
     for(i = 0; i < n; i++){
-        if (A[i] > x) return 0;
-        sum += A[i]
-        if(sum > x) sum = 0; i--; need++;
+        if (A[i] > x){return 0;}
+        sum += A[i];
+        if(sum > x){sum = 0; i--; need++;}
         }
-        }
-    return need <= k
+return need <= k;
 }
 
 int main(){
@@ -28,7 +27,7 @@ int main(){
     while(ub - lb > 1){
         int x = (lb + ub)/2;
         if(p(x)) ub = x;
-        else lb = x
+        else lb = x;
     }
     printf("%d\n", ub);
 
