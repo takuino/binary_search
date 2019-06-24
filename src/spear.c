@@ -22,6 +22,6 @@ int main(){
         if(sum < k) ub = x;
         else lb = x;
     }
-    printf("%d\n", ub);
+    printf("%d\n", lb);
     return 0;
 }
